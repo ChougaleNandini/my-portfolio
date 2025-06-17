@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandini's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="light">
+
+  <header id="header">
+    <div class="container">
+      <h1>Hello, I'm <span>Nandini</span></h1>
+      <p>MCA Student</p>
+      <button id="themeToggle" class="circle-btn" title="Toggle Theme">🌙</button>
+      <a
+        href="https://www.linkedin.com/in/nandini-chougale-41b336295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+        <img src="nandini1.jpg.jpg" alt="My Photo" class="Profile-Pic" title="Smile! You're viewing my portfolio 😄" />
+      </a>
+      <div class="nav-links">
+        <a href="#about" class="btn">About</a>
+        <a href="#project" class="btn">Projects</a>
+        <a href="#skills" class="btn">Skills</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer currently pursuing MCA. I enjoy building websites and solving real-world problems
+        using Python and web technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="project">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Snake Game</h3>
+        <p>A classic snake game using Python and Turtle module.</p>
+        <a href="https://github.com/ChougaleNandini/snake-game" target="_blank">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This website! Built using HTML and CSS with a responsive layout.</p>
+        <a href="https://chougalenandini.github.io/my-portfolio/" target="_blank">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+   <!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
+      <div class="skill"><i class="fas fa-database"></i><p>SQL</p></div>
+      <div class="skill"><i class="fas fa-code"></i><p>C++</p></div>
+      <div class="skill"><i class="fas fa-terminal"></i><p>C</p></div>
+
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>I'm open to collaboration or questions!</p>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:nandini@example.com">nandinichougale63@gmail.com</a></p>
+      <a href="https://www.google.com/maps/place/Kolhapur">
+      <p><i class="fas fa-map-marker-alt"></i> Kolhapur, India</p>
+      </a>
+    </div>
+
+    <form action="https://formspree.io/f/movwwdwg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="social-icons">
+      <a href="https://github.com/ChougaleNandini" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nandini-chougale-41b336295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nandini Chougale. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Theme dark and light -->
+  <script>
+    const toggleButton = document.getElementById('themeToggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('light');
+      body.classList.toggle('dark');
+    });
+  </script>
+</body>
+
+</html>
